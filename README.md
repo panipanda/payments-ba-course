@@ -52,7 +52,7 @@ The tests check the structure of the course data, the pure logic (Luhn, ISO 8583
 
 ```
 index.html              page shell and metadata
-assets/                 styles and fonts (IBM Plex, SIL OFL)
+assets/                 styles and fonts (Literata, Source Sans 3, SIL OFL)
 js/lib.js               pure functions and the progress state logic
 js/core.js              state, router, quizzes, practice, flashcards, exam, glossary
 js/widgets.js           the 13 trainers

@@ -6,4 +6,4 @@ You may share and adapt it, including commercially, if you give appropriate cred
 
 The code (everything else, except the fonts) is under the MIT license, see `LICENSE`.
 
-The IBM Plex fonts in `assets/fonts/` are under the SIL Open Font License 1.1, see `assets/fonts/OFL.txt`.
+The Literata and Source Sans 3 fonts in `assets/fonts/` are under the SIL Open Font License 1.1, see `assets/fonts/OFL-Literata.txt` and `assets/fonts/OFL-SourceSans3.txt`.
