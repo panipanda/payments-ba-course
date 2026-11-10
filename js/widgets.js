@@ -74,7 +74,7 @@ WIDGETS.feecalc={title:'Merchant fee calculator',tag:'teaching numbers',init(b){
   const calc=()=>{
     const a=num('a'),r=feeCalc(a,num('i'),num('s'),num('m'),num('f'));
     const w=x=>a?Math.max(0,Math.min(100,x/r.tot*100)):0;
-    $('#fc-out',b).innerHTML=`<div style="display:flex;height:16px;border-radius:4px;overflow:hidden;border:1px solid var(--rule)" aria-hidden="true"><div style="width:${w(r.fi)}%;background:var(--accent)"></div><div style="width:${w(r.fs)}%;background:var(--info)"></div><div style="width:${w(r.fm+r.fx)}%;background:var(--muted)"></div></div>
+    $('#fc-out',b).innerHTML=`<div style="display:flex;height:16px;border-radius:4px;overflow:hidden;border:1px solid var(--rule)" aria-hidden="true"><div style="width:${w(r.fi)}%;background:var(--accent)"></div><div style="width:${w(r.fs)}%;background:var(--amber)"></div><div style="width:${w(r.fm+r.fx)}%;background:var(--muted)"></div></div>
     <div class="row src" style="margin:4px 0 8px"><span>■ interchange (to the issuer)</span><span>■ scheme</span><span>■ acquirer</span></div>
     <div class="kv"><span>Interchange → issuer</span><b class="num">${fmt(r.fi)}</b><span>Scheme fee</span><b class="num">${fmt(r.fs)}</b><span>Acquirer markup</span><b class="num">${fmt(r.fm)}</b><span>Fixed fee per transaction</span><b class="num">${fmt(r.fx)}</b><span><b>MDR, total (${fmt(r.pct)}%)</b></span><b class="num">${fmt(r.tot)}</b><span><b>The merchant receives</b></span><b class="num">${fmt(r.net)}</b></div>`;
     const bl=num('b'),mar=a*(bl-num('i')-num('s'))/100;
